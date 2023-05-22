@@ -12,12 +12,12 @@ def count_this_sentence(sentence): # set the function for the enitre program act
         elif c.isdigit():
             no_of_digits += 1
              
-    return no_of_digits, no_of_letter # we are returning the values that this agents holds. 
+    return no_of_letter , no_of_digits # we are returning the values that this agents holds. 
 
 sentence = input("Insert any statement that includes a number: ") # lets ask our user to input a sentence we a number character in it 
 
-letters, digits = count_this_sentence(sentence) # calling the function to take action on the value in the sentence variable and assiged its results to letters and digits 
+no_of_letter, no_of_digits= count_this_sentence(sentence) # calling the function to take action on the value in the sentence variable and assiged its results to letters and digits 
 
 # printing the value 
-print("LETTERS", letters)
-print("DIGITS", digits)
+print("LETTERS", no_of_letter)
+print("DIGITS",  no_of_digits)
